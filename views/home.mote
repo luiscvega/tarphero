@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row-fluid">
   <div class="demo-headline">
     <h1 class="demo-logo">
       <!--<div class="logo"></div>-->
@@ -8,7 +8,7 @@
   </div>
 </div> <!-- /row -->
 
-<div class="row demo-samples">
+<div class="row-fluid demo-samples">
   <div class="span4">
     <div class="todo mrm">
       <div class="todo-search">
@@ -78,7 +78,7 @@
 </div>
 
 
-<div class="row">
+<div class="row-fluid">
   <div class="span9">
     <div class="demo-browser">
       <div class="demo-browser-side">
