@@ -26,6 +26,10 @@ Cuba.define do
     render "home", {}, "layouts/layout"
   end
 
+  on "start" do
+    render "start", {}, "layouts/layout"
+  end
+
   on default do
     res.status = 404
 

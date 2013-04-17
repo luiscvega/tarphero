@@ -5,14 +5,14 @@
       Tarp
       <img class="tile-image" alt="" src="img/illustrations/infinity.png" />
       Hero
-      <small>hassle-free tarpaulin printing</small>
+      <small>hassle-free tarpaulin printing + free delivery</small>
     </h1>
   </div>
 </div> <!-- /row -->
 
 <div class="row-fluid start">
   <div class="offset4 span4">
-    <a href="#" class="btn btn-large btn-block btn-success">Print now. It's easy.</a>
+    <a href="/start" class="btn btn-large btn-block btn-success">Print now. It's easy.</a>
   </div>
 </div>
 
@@ -45,6 +45,7 @@
 <hr />
 
 <div class="row demo-tiles">
+  <h1>This is how it works.</h1>
   <div class="span4">
     <div class="tile">
       <img class="tile-image big-illustration" alt="" src="img/illustrations/colors.png" />
