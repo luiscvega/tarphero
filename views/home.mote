@@ -2,11 +2,47 @@
   <div class="demo-headline">
     <h1 class="demo-logo">
       <!--<div class="logo"></div>-->
-      TarpHero
-      <small>hassle free tarpaulin printing</small>
+      Tarp
+      <img class="tile-image" alt="" src="img/illustrations/infinity.png" />
+      Hero
+      <small>hassle-free tarpaulin printing</small>
     </h1>
   </div>
 </div> <!-- /row -->
+
+<div class="row-fluid start">
+  <div class="offset4 span4">
+    <a href="#" class="btn btn-large btn-block btn-success">Print now. It's easy.</a>
+  </div>
+</div>
+
+<hr />
+
+<div class="row demo-tiles">
+  <div class="span4">
+    <div class="tile">
+      <img class="tile-image big-illustration" alt="" src="img/illustrations/colors.png" />
+      <h3 class="tile-title">Step 1: Upload your image</h3>
+      <p>Send us your image and we can process its dimension, and even its cost.</p>
+    </div>
+  </div>
+
+  <div class="span4">
+    <div class="tile">
+      <img class="tile-image" alt="" src="img/illustrations/map.png" />
+      <h3 class="tile-title">Step 2: Tell us where to ship it</h3>
+      <p>No need to go to us, we'll quickly deliver it to your house as soon as possible.</p>
+    </div>
+  </div>
+
+  <div class="span4">
+    <div class="tile">
+      <img class="tile-image" alt="" src="img/illustrations/retina.png" />
+      <h3 class="tile-title">Step 3: We deliver it to you!</h3>
+      <p>And that's it! Sit back, relax and wait for your tarpaulin to arrive!</p>
+    </div>
+  </div>
+</div> <!-- /tiles -->
 
 <div class="row-fluid demo-samples">
   <div class="span4">
