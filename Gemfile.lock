@@ -19,6 +19,7 @@ GEM
       scrivener (~> 0.0.3)
     ohm-contrib (1.2)
       ohm (~> 1.2)
+    pbkdf2 (0.1.0)
     pry (0.9.12)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -26,6 +27,8 @@ GEM
     rack (1.5.2)
     redis (3.0.3)
     scrivener (0.0.3)
+    shield (1.0.0)
+      pbkdf2
     shotgun (0.9)
       rack (>= 1.0)
     slop (3.4.4)
@@ -46,6 +49,7 @@ DEPENDENCIES
   ohm
   ohm-contrib
   pry
+  shield
   shotgun
   spawn
   thin
