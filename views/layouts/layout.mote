@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="/css/flat-ui.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- Loading CSS -->
@@ -32,7 +32,7 @@
                 <div class="nav-collapse collapse">
                   <ul class="nav">
                     <li class="active">
-                    <a href="#">
+                    <a href="/">
                       TarpHero
                     </a>
                     </li>
@@ -99,17 +99,19 @@
     </footer>
 
     <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
-    <script src="js/jquery.dropkick-1.0.0.js"></script>
-    <script src="js/custom_checkbox_and_radio.js"></script>
-    <script src="js/custom_radio.js"></script>
-    <script src="js/jquery.tagsinput.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
+    <script src="/js/jquery-1.8.2.min.js"></script>
+    <script src="/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="/js/jquery.dropkick-1.0.0.js"></script>
+    <script src="/js/custom_checkbox_and_radio.js"></script>
+    <script src="/js/custom_radio.js"></script>
+    <script src="/js/jquery.tagsinput.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/jquery.placeholder.js"></script>
     <script src="http://vjs.zencdn.net/c/video.js"></script>
-    <script src="js/less.js"></script>
-    <script src="js/application.js"></script>
+    <script src="/js/less.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/jquery.form.js"></script>
+    <script src="/js/base.js"></script>
     <!--[if lt IE 8]>
       <script src="js/icon-font-ie7.js"></script>
       <script src="js/icon-font-ie7-24.js"></script>

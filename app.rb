@@ -26,14 +26,12 @@ Cuba.define do
     render "home", {}, "layouts/layout"
   end
 
-  on "start" do
-    render "start", {}, "layouts/layout"
+  on "jobs" do
+    run Routes::Jobs
   end
 
-  on default do
-    res.status = 404
-
-    guest_render "404", title: "Not Found"
+  on "images" do
+    run Routes::Images
   end
 
 end

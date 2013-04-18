@@ -12,7 +12,7 @@
 
 <div class="row-fluid start">
   <div class="offset4 span4">
-    <a href="/start" class="btn btn-large btn-block btn-success">Print now. It's easy.</a>
+    <a href="/jobs/new" class="btn btn-large btn-block btn-success">Print now. It's easy.</a>
   </div>
 </div>
 
