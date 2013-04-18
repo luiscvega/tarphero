@@ -8,4 +8,9 @@ class Image < Imagery
   def to_hash
     { id: key }
   end
+
+  def to_json(*args)
+    to_hash.to_json(*args)
+  end
+
 end
