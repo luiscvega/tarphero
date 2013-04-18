@@ -5,7 +5,7 @@
         <div class="span6">
           <div class="widget" id="customize-product">
             <h3>Add Images</h3>
-            <input type="file" name="image" />
+            <input type="file" name="images[]" multiple />
             <input type="submit" class="btn" />
           </div> <!-- widget -->
         </div> <!-- span4 -->
