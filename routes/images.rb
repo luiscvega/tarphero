@@ -1,12 +1,11 @@
 module Routes
   class Images < Cuba
     define do
-      on post, param("images") do |photos|
+      on post, param("images") do |images|
         job = Job.create
-        binding.pry
-        photos = ImageUploader.run(job, photos)
+        images = ImageUploader.run(job, images)
 
-        res.write({ photos: photos }.to_json)
+        res.write({ images: images }.to_json)
       end
     end
   end

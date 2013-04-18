@@ -1,17 +1,17 @@
 class ImageUploader
-  def self.run(job, photos)
+  def self.run(job, images)
     job.image_ids ||= []
 
     ret = []
 
-    photos.each do |dict|
-      photo = Image.new(:image, 1)
-      photo.save(dict[:tempfile])
+    images.each do |dict|
+      image = Image.new
+      image.save(dict[:tempfile])
 
-      ret << photo
+      ret << image
     end
 
-    job.photo_ids += ret.map { |e| e.id }
+    job.image_ids += ret.map { |e| e.key }
     job.save
 
     return ret
