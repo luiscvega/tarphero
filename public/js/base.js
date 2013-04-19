@@ -4,7 +4,6 @@ $(function() {
     $("#dropzone").dropzone({
         url: "/images",
         paramName: "image",
-        previewsContainer: ".thing",
         accept: function(file, done) {
             var count = $(".thing").children().length;
 
@@ -17,10 +16,12 @@ $(function() {
         init: function() {
             this.on("success", function(image, response) {
                 $("#dropzone").remove();
+
                 var response = response,
                     image = $.parseJSON(response);
 
             });
+
         }
     });
 
