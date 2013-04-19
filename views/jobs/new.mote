@@ -1,10 +1,9 @@
 <div class="row-fluid">
   <div class="span6">
     <div class="tile">
-      <form action="/images"
-        class="dropzone"
-        id="my-awesome-dropzone">
-      </form>
+
+      <div class="dropzone" id="dropzone"></div>
+
       <!--<form action="/images" method="POST" enctype="multipart/form-data" id="image-upload">-->
         <!--<div class="span6">-->
           <!--<div class="widget" id="customize-product">-->
@@ -17,26 +16,76 @@
         <!--</div> [> span4 <]-->
       <!--</form>-->
 
-      <div class="clearfix"></div>
+      <div class="thing dropzone-previews"></div>
     </div>
   </div>
 
   <div class="span6">
     <div class="tile">
-      <h3>Job Form</h3>
-      <form class="form-horizontal">
+      <form id="new-job-form" class="form-horizontal">
 
+        <legend>Contact Details</legend>
         <div class="control-group">
-          <label class="control-label" for="inputEmail">Your Name</label>
+          <label class="control-label" for="inputEmail">Email</label>
           <div class="controls">
-            <input type="text" id="inputEmail" placeholder="Email">
+            <input type="text" id="inputEmail">
           </div>
         </div>
 
         <div class="control-group">
-          <label class="control-label" for="inputPassword">Street</label>
+          <label class="control-label" for="inputEmail">First Name</label>
           <div class="controls">
-            <input type="password" id="inputPassword" placeholder="Password">
+            <input type="text" id="inputEmail">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Last Name</label>
+          <div class="controls">
+            <input type="text" id="inputEmail">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Contact Number</label>
+          <div class="controls">
+            <input type="text" id="inputEmail" placeholder="e.g. +63-917-898-8342">
+          </div>
+        </div>
+
+        <legend>Shipping Details</legend>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Address Line 1</label>
+          <div class="controls">
+            <input type="text" id="inputEmail">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Address Line 2</label>
+          <div class="controls">
+            <input type="text" id="inputEmail">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">City</label>
+          <div class="controls">
+            <input type="text" id="inputEmail">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Location</label>
+          <div class="controls">
+            <input type="text" id="inputEmail">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Postal Code</label>
+          <div class="controls">
+            <input type="text" id="inputEmail" class="span3">
           </div>
         </div>
 
