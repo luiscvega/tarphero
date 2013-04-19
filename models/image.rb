@@ -6,7 +6,7 @@ class Image < Imagery
   end
 
   def to_hash
-    { id: key }
+    { id: key, url: url }
   end
 
   def to_json(*args)
