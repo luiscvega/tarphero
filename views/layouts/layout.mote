@@ -12,6 +12,10 @@
     <link href="/css/flat-ui.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico">
 
+    <!-- Loading CSS for Dropzone -->
+    <link href="/css/dropzone.css" rel="stylesheet">
+    <link href="/css/basic.css" rel="stylesheet">
+
     <!-- Loading CSS -->
     <link href="/css/main.less" rel="stylesheet/less" type="text/css" />
 
@@ -111,6 +115,7 @@
     <script src="/js/less.js"></script>
     <script src="/js/application.js"></script>
     <script src="/js/jquery.form.js"></script>
+    <script src="/js/dropzone.js"></script>
     <script src="/js/base.js"></script>
     <!--[if lt IE 8]>
       <script src="js/icon-font-ie7.js"></script>

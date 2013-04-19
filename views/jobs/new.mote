@@ -1,15 +1,21 @@
 <div class="row-fluid">
   <div class="span6">
     <div class="tile">
-      <form action="/images" method="POST" enctype="multipart/form-data" id="image-upload">
-        <div class="span6">
-          <div class="widget" id="customize-product">
-            <h3>Add Images</h3>
-            <input type="file" name="images[]" multiple />
-            <input type="submit" class="btn" />
-          </div> <!-- widget -->
-        </div> <!-- span4 -->
+      <form action="/images"
+        class="dropzone"
+        id="my-awesome-dropzone">
       </form>
+      <!--<form action="/images" method="POST" enctype="multipart/form-data" id="image-upload">-->
+        <!--<div class="span6">-->
+          <!--<div class="widget" id="customize-product">-->
+            <!--<h3>Add Images</h3>-->
+            <!--<input type="file" name="images[]" multiple />-->
+            <!--<div id="upload-multiple">-->
+              <!--<input id="upload-button" type="submit" class="btn" />-->
+            <!--</div>-->
+          <!--</div> [> widget <]-->
+        <!--</div> [> span4 <]-->
+      <!--</form>-->
 
       <div class="clearfix"></div>
     </div>
