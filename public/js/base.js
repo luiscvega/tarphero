@@ -5,7 +5,7 @@ $(function() {
         url: "/images",
         paramName: "image",
         accept: function(file, done) {
-            var count = $(".thing").children().length;
+            var count = $("#dropzone").children(".preview").length;
 
             if (count > 1) {
                 done("You can only upload one image per job.");
@@ -14,11 +14,22 @@ $(function() {
             }
         },
         init: function() {
-            this.on("success", function(image, response) {
+            this.on("success", function(file, response) {
                 $("#dropzone").remove();
 
                 var response = response,
                     image = $.parseJSON(response);
+
+                if (image.orientation == "portrait") {
+                  var width = 150, height = 300;
+                } else {
+                  var width = 600, height = 300;
+                }
+
+                $("#preview").append("<img height='" + height + "' width='" + width + "' src='" + image.url + "'/>")
+
+                window.image = image;
+                window.file = file;
 
             });
 
