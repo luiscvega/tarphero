@@ -6,7 +6,7 @@ class Image < Imagery
   end
 
   def to_hash
-    { id: key, url: url, orientation: orientation, width: width, height: height }
+    { id: key, url: url, orientation: orientation, width: width, height: height, ratio: ratio }
   end
 
   def to_json(*args)
@@ -14,15 +14,19 @@ class Image < Imagery
   end
 
   def width
-    @width ||= dim[0]
+    (@width ||= dim[0]).to_i
   end
 
   def height
-    @height ||= dim[1]
+    (@height ||= dim[1]).to_i
+  end
+
+  def ratio
+    width.to_f / height.to_f
   end
 
   def orientation
-    width.to_i > height.to_i ? "landscape" : "portrait"
+    width > height ? "landscape" : "portrait"
   end
 
   def dim

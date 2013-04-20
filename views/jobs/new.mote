@@ -1,4 +1,9 @@
-<div class="row-fluid">
+<div id="image-section" class="row-fluid">
+  <div id="upload-tips" class="span3">
+    <div class="tile">
+      <legend>Upload Tips</legend>
+    </div>
+  </div>
   <div class="span9">
     <div id="preview" class="tile">
 
@@ -19,10 +24,29 @@
     </div>
   </div>
 
-  <div class="span3">
-    <div class="tile">
-    </div>
-  </div>
+  %#<div class="span3">
+  %#  <div class="tile">
+  %#    <legend>Image Details</legend>
+  %#    <dl>
+  %#      <dt>File Name<dt>
+  %#      <dd id="image_file_name"></dd>
+  %#      <dt>Dimensions<dt>
+  %#      <dd id="image_dimensions"></dd>
+  %#      <dt>Ratio<dt>
+  %#      <dd id="image_ratio"></dd>
+  %#      <dt>Pixels Per Inch<dt>
+  %#      <dd id="image_resolution"></dd>
+  %#      <dt>Width (ft.)<dt>
+  %#      <dd id="image_width">
+  %#        <input type="text" class="span4"/>
+  %#      </dd>
+  %#      <dt>Height (ft.)<dt>
+  %#      <dd id="image_height">
+  %#        <input type="text" class="span4"/>
+  %#      </dd>
+  %#    </dl>
+  %#  </div>
+  %#</div>
 
 </div>
 

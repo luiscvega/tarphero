@@ -16,23 +16,71 @@ $(function() {
         init: function() {
             this.on("success", function(file, response) {
                 $("#dropzone").remove();
+                $("#upload-tips").remove();
 
                 var response = response,
                     image = $.parseJSON(response);
 
                 if (image.orientation == "portrait") {
-                  var width = 150, height = 300;
+                  var height = 300, width = height * parseFloat(image.ratio);
                 } else {
-                  var width = 600, height = 300;
+                  var width = 600, height = width * parseFloat(image.ratio);
                 }
 
-                $("#preview").append("<img height='" + height + "' width='" + width + "' src='" + image.url + "'/>")
+                $("#preview").append("<div id='image-preview'><img height='" + height + "' width='" + width + "' src='" + image.url + "'/></div")
+
+                $("#image-section").append(template({ file: file, image: image, ratio: image.ratio, orientation: image.orientation }))
 
                 window.image = image;
                 window.file = file;
-
             });
+        }
+    });
 
+    var template = Handlebars.compile(
+                "<div id='image-details' class='span3' data-ratio='{{ ratio }}' data-orientation='{{ orientation }}'>" +
+                  "<div class='tile'>" +
+                    "<legend>Image Details</legend>" +
+                    "<dl>" +
+                      "<dt>File Name<dt>" +
+                      "<dd>{{ file.name }}</dd>" +
+                      "<dt>Dimensions<dt>" +
+                      "<dd>Width: {{ image.width }} pixels</dd>" +
+                      "<dd>Height: {{ image.height }} pixels</dd>" +
+                      "<dt>Width (ft.)<dt>" +
+                      "<dd>" +
+                        "<input id='image_width' type='number' class='span4' />" +
+                      "</dd>" +
+                      "<dt>Height (ft.)<dt>" +
+                      "<dd>" +
+                        "<input id='image_height' type='number' class='span4' />" +
+                      "</dd>" +
+                    "</dl>" +
+                  "</div>" +
+                "</div>")
+
+    $(document).on("keyup", "#image_width", function(e) {
+        var $target = $(e.target), val = $target.val(),
+            orientation = $("#image-details").data("orientation"),
+            ratio = $("#image-details").data("ratio");
+
+        if ($target.attr("id") == "image_width") {
+            $("#image_height").val(val / ratio);
+        } else {
+            $("#image_width").val(val / ratio);
+        }
+    });
+
+    $(document).on("keyup", "#image_height", function(e) {
+        console.log("hey");
+        var $target = $(e.target), val = $target.val(),
+            orientation = $("#image-details").data("orientation"),
+            ratio = $("#image-details").data("ratio");
+
+        if ($target.attr("id") == "image_width") {
+            $("#image_height").val(val * ratio);
+        } else {
+            $("#image_width").val(val * ratio);
         }
     });
 
