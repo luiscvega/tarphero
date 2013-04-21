@@ -49,11 +49,11 @@ $(function() {
                       "<dd>Height: {{ image.height }} pixels</dd>" +
                       "<dt>Width (ft.)<dt>" +
                       "<dd>" +
-                        "<input id='image_width' type='number' class='span4' />" +
+                        "<input id='image_width' name='job[width]' type='number' class='span4' />" +
                       "</dd>" +
                       "<dt>Height (ft.)<dt>" +
                       "<dd>" +
-                        "<input id='image_height' type='number' class='span4' />" +
+                        "<input id='image_height' name='job[height]' type='number' class='span4' />" +
                       "</dd>" +
                     "</dl>" +
                   "</div>" +
