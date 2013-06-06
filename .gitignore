@@ -2,3 +2,4 @@
 dump.rdb
 .DS_Store
 public/images/*
+.rvmrc
